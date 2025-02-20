@@ -15,7 +15,7 @@ st.set_page_config(
 )
    
 
-st.title('Select a Model and Predict Customer Churn 🔮')
+st.title('Select a Model and Predict Customer Loan Default 🔮')
 
 
 @st.cache_resource(show_spinner='Loading prediction Models')
@@ -191,7 +191,10 @@ def predict():
             NumCreditLines = st.slider('NumCreditLines', min_value=1, max_value=1000)
         
         with col11:
-            InterestRate = st.slider('InterestRate',min_value=1, max_value=500)
+            InterestRate = st.slider('InterestRate', min_value=1, max_value=500)
+
+        with col12:
+            LoanTerm = st.slider('LoanTerm', min_value=1, max_value=60)
             
 
          
