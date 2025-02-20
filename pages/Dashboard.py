@@ -6,7 +6,7 @@ import streamlit_authenticator as stauth # type: ignore
 
 
 st.set_page_config(
-    page_title="Churn Prediction App",
+    page_title="Loan Prediction App",
     page_icon="👋",
     layout= 'wide'
 )
@@ -16,7 +16,7 @@ st.set_page_config(
 
 
 ## -- LOAD DATA --
-df = pd.read_csv('data/Loans.csv')
+df = pd.read_csv('data/loans.csv')
 
 
 def numeric(df):
