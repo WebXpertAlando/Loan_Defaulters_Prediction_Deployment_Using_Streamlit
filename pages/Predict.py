@@ -195,6 +195,9 @@ def predict():
 
         with col12:
             LoanTerm = st.slider('LoanTerm', min_value=1, max_value=60)
+
+        with col13:
+            DTIRatio = st.slider('DITRation', min_value=0.1, max_value=0.99)
             
 
          
