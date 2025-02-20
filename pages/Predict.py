@@ -170,7 +170,7 @@ def predict():
             PaperlessBilling = st.radio('PaperlessBilling', options=['Yes', 'No'], key='PaperlessBilling', horizontal=True) 
             PaymentMethod = st.radio('PaymentMethod', options=['Electronic check', 'Credit card (automatic)', 'Mailed check', 'Bank transfer (automatic)'], key='PaymentMethod') 
             
-        col5,col6,col7,col8,col9,col10,col11,col12,col13,col14 = st.columns(10)
+        col5,col6,col7,col8,col9,col10,col11,col12,col13 = st.columns(9)
         
         with col5:
             Age = st.slider('Age', min_value=1, max_value=60, step=1, key='Age') 
@@ -216,7 +216,7 @@ def predict():
                     'loanterm': [LoanTerm],
                     'dtiratio': [DTIRatio],
                     'education': [Education],
-                    'employmenttype': [EmployementType],
+                    'EmploymentType': [EmployementType],
                     'maritalstatus': [MaritalStatus],
                     'hasmortgage': [HasMortgage],
                     'hasdependants': [HasDependents],
