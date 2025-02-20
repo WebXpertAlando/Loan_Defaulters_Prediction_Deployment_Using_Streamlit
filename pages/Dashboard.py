@@ -114,7 +114,7 @@ def Multivariate_plots():
 def KPI_plots():
     col1,col2,col3,col4 = st.columns(4)
     with col1:
-        fig = st.metric(value=df['Churn'].sum(), label='Churned Customers')
+        fig = st.metric(value=df['Default'].sum(), label='Customers Who have Defaulted')
 
     
 colA, colB = st.columns(2)
